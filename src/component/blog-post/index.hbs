@@ -1,0 +1,21 @@
+<div class="blogpost-post{{#if greyed}} blog-post--greyed{{/if}}">
+
+	{{#with data}}
+
+	<header class='blogpost-header'>
+		{{#if hasBubbles}}
+		<ul class="bubble-row">
+			{{#each bubbles}}
+				<li class='bubble-item bubble-item--{{accent}}'>{{text}}</li>
+			{{/each}}
+		</ul>
+		{{/if}}
+
+		<span class='date'>{{date}}</span>
+	</header>
+
+	<p class="blogpost-text">{{text}}</p>
+
+	{{/with}}
+
+</div>

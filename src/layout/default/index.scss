@@ -1,6 +1,15 @@
-
+@use '../../style' as s;
 
 body {
 	font-family: 'Roboto', sans-serif;
 	padding: 100px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.page {
+	max-width: 375px;
+	width: 100%;
 }

@@ -1,3 +1,7 @@
-import '../../script/test'
+import { createElement } from '../../script/layout';
 
-console.log('container')
+const page = document.getElementById('main');
+console.log(page);
+const title = createElement('h1', '', 'My blog');
+
+page.append(title);

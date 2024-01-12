@@ -1,13 +1,20 @@
-{{!
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
-}}
+<main id='main'>
+	<header class="blog-header">
+		<nav class='blog-nav'>
+			<a href="/">
+				<img class='icon' src="/svg/back.svg">
+			</a>
+			<a href="/">
+				<img class="profile-picture" src="/img/profiles/{{data.profile_img}}.png" alt="profile">
+			</a>
+		</nav>
 
-<main>
-	{{>heading title="Index" info=data.test}}
+		<h1>My Blog</h1>
+
+	</header>
+	<ul class="blog">
+		{{#each data.blog}}
+			{{>blog-post data=this}}
+		{{/each}}
+	</ul>
 </main>
-
-{{!
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
-}}
