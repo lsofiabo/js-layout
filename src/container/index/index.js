@@ -1,7 +1,13 @@
-import { createElement } from '../../script/layout';
+import {
+    createElement,
+    createHeader,
+    createBlog,
+} from '../../script/layout';
 
 const page = document.getElementById('main');
-console.log(page);
 const title = createElement('h1', '', 'My blog');
 
-page.append(title);
+page.append(createHeader());
+const blog = createBlog();
+console.log(blog);
+page.append(blog);

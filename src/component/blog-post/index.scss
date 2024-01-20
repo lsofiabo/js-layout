@@ -1,6 +1,6 @@
 @use '../../style' as s;
 
-.blogpost-post {
+.blog-post {
 	background-color: #F7F7F7;
 	color: #363636;
 
@@ -14,7 +14,7 @@
 	gap: s.space(2);
 }
 
-.blogpost-post--greyed {
+.blog-post--greyed {
 	background-color: #fff;
 	border: 1px solid #E6E6E6;
 	color: #888;

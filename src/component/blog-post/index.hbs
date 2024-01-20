@@ -1,8 +1,8 @@
-<div class="blogpost-post{{#if greyed}} blog-post--greyed{{/if}}">
+<div class="blog-post{{#if greyed}} blog-post--greyed{{/if}}">
 
 	{{#with data}}
 
-	<header class='blogpost-header'>
+	<div class='blogpost-header'>
 		{{#if hasBubbles}}
 		<ul class="bubble-row">
 			{{#each bubbles}}
@@ -12,7 +12,7 @@
 		{{/if}}
 
 		<span class='date'>{{date}}</span>
-	</header>
+	</div>
 
 	<p class="blogpost-text">{{text}}</p>
 
