@@ -1,5 +1,4 @@
 class Test {
-    test = 'Test';
     blog_data = {
         profile_img: '1',
         blog: [

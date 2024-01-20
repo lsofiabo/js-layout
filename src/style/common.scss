@@ -1,0 +1,19 @@
+@use './space.scss' as s;
+
+main {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(5);
+}
+
+.page-header {
+	display: flex;
+	flex-direction: column;
+	gap: s.space(5);
+	margin-bottom: s.space(2);
+}
+
+.page-nav {
+	display: flex;
+	justify-content: space-between;
+}

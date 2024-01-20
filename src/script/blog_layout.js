@@ -1,52 +1,7 @@
+import { createElement } from './common_layout';
+
 const Test = require('../class/test');
 const blog_data = new Test().blog_data;
-
-export const createElement = (tag, className, text) => {
-    const elem = document.createElement(tag);
-
-    if (className) {
-        elem.className = className;
-    }
-
-    if (text) {
-        elem.innerHTML = text;
-    }
-
-    return elem;
-};
-
-const HEADER_BUTTONS = [
-    {
-        href: '/',
-        class: 'icon',
-        src: '/svg/back.svg',
-    },
-    {
-        href: '/',
-        class: 'profile-picture',
-        src: `/img/profiles/${blog_data.profile_img}.png`,
-    },
-];
-
-export const createHeader = () => {
-    const header = createElement('header', 'blog-header');
-    const nav = createElement('nav', 'blog-nav');
-
-    HEADER_BUTTONS.forEach((params) => {
-        const link = createElement('a');
-        link.href = params.href;
-        const img = createElement('img', params.class);
-        img.src = params.src;
-
-        link.appendChild(img);
-        nav.appendChild(link);
-    });
-
-    header.appendChild(nav);
-    const h = createElement('h1', '', 'My Blog');
-    header.appendChild(h);
-    return header;
-};
 
 const createPost = (post) => {
     let post_class = 'blog-post';

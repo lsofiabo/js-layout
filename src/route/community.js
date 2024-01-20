@@ -9,7 +9,6 @@ router.get('/community', function (req, res) {
         title: 'Community',
 
         // data: blog_data,
-        data: {},
     });
 });
 

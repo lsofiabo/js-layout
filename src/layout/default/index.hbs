@@ -1,8 +1,3 @@
-{{!
-  Це леяут по замовчюванню, котрий вже містить базову структуру HTML документа
-  І котрий обгортає код container файлів для будь-яких ендпоїнтів
-}}
-
 <!DOCTYPE html>
 <html>
 
@@ -28,6 +23,8 @@
 		{{!-- Підключаємо файл стилів container --}}
 		<link href='dist/css/container/{{name}}/index.css' rel='stylesheet' />
 		{{!-- Підключаємо файл скриптів container --}}
+
+		<link rel="stylesheet" href="dist/css/style/common.css">
 
 		{{#each component}}
 			{{!-- Підключаємо файл стилів component --}}
